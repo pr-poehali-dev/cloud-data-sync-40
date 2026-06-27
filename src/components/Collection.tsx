@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Icon from "@/components/ui/icon";
+import SplitText from "@/components/atmosphere/SplitText";
+import Branch from "@/components/atmosphere/Branch";
 
 const pieces = [
   {
@@ -27,14 +29,15 @@ const pieces = [
 
 export default function Collection() {
   return (
-    <section id="collection" className="bg-vestex-950 px-6 lg:px-16 py-24 lg:py-32">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+    <section id="collection" className="relative bg-vestex-950 px-6 lg:px-16 py-24 lg:py-32 overflow-hidden">
+      <Branch className="left-0 top-10 h-[260px] w-[130px] opacity-50 hidden lg:block" />
+      <div className="relative z-10 flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
         <div>
           <p className="text-white/30 text-xs uppercase tracking-[0.3em] mb-4">
             Коллекция / 01
           </p>
           <h2 className="font-display text-white text-4xl md:text-6xl font-bold tracking-tight">
-            FW / ENGINEERED
+            <SplitText text="FW / ENGINEERED" />
           </h2>
         </div>
         <a
@@ -50,7 +53,7 @@ export default function Collection() {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
         {pieces.map((piece, i) => (
           <motion.article
             key={piece.name}
@@ -58,7 +61,7 @@ export default function Collection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
-            className="group cursor-pointer"
+            className="group cursor-pointer transition-transform duration-500 hover:-translate-y-2"
           >
             <div className="relative overflow-hidden bg-vestex-900 aspect-[3/4]">
               <img

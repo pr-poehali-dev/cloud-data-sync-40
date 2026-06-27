@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Icon from "@/components/ui/icon";
+import SplitText from "@/components/atmosphere/SplitText";
+import VineButton from "@/components/atmosphere/VineButton";
 
 const principles = [
   {
@@ -44,9 +46,9 @@ export default function Philosophy() {
           Философия
         </p>
         <h2 className="font-display text-white text-3xl md:text-5xl font-bold tracking-tight mb-14 leading-tight">
-          Форма следует
+          <SplitText text="Форма следует" />
           <br />
-          за функцией
+          <SplitText text="за функцией" delay={0.2} />
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
@@ -57,14 +59,25 @@ export default function Philosophy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="group"
             >
-              <Icon name={p.icon} size={22} className="text-white mb-4" />
+              <Icon
+                name={p.icon}
+                size={22}
+                className="text-white mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1"
+              />
               <h3 className="text-white text-lg mb-2 tracking-wide">{p.title}</h3>
               <p className="text-white/50 text-sm leading-relaxed font-light">
                 {p.text}
               </p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-14">
+          <VineButton href="#collection" variant="ghost">
+            Смотреть коллекцию
+          </VineButton>
         </div>
       </div>
     </section>

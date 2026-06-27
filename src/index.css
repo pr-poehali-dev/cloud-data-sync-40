@@ -133,3 +133,18 @@
     background: #333333;
   }
 }
+
+@layer utilities {
+  .vine-path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+  }
+  .group:hover .vine-path {
+    animation: vine-draw 0.9s ease-out forwards;
+  }
+  @keyframes vine-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}

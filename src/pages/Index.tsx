@@ -4,8 +4,11 @@ import Manifesto from "@/components/Manifesto";
 import Collection from "@/components/Collection";
 import Philosophy from "@/components/Philosophy";
 import Contact from "@/components/Contact";
+import { useLenis } from "@/hooks/useLenis";
 
 const Index = () => {
+  useLenis();
+
   return (
     <main className="min-h-screen bg-vestex-950 antialiased">
       <Header />
