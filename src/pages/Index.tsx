@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
+import Landscape from "@/components/Landscape";
 import Collection from "@/components/Collection";
 import Philosophy from "@/components/Philosophy";
 import Contact from "@/components/Contact";
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <Hero />
       <Manifesto />
+      <Landscape />
       <Collection />
       <Philosophy />
       <Contact />

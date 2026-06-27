@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
 				display: ['Syncopate', 'Inter', 'sans-serif'],
+				gothic: ['Cinzel', 'Georgia', 'serif'],
 			},
 			colors: {
 				vestex: {

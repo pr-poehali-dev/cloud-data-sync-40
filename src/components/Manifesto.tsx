@@ -55,7 +55,7 @@ function ManifestoLine({
   return (
     <motion.p
       style={{ opacity }}
-      className="font-display text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
+      className="font-gothic text-white text-3xl md:text-5xl lg:text-6xl font-semibold leading-snug tracking-wide"
     >
       {children}
     </motion.p>

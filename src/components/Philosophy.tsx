@@ -34,11 +34,12 @@ export default function Philosophy() {
     >
       <div className="relative h-[60vh] lg:h-auto lg:min-h-[700px] overflow-hidden">
         <img
-          src="https://cdn.poehali.dev/projects/402b0c87-66ca-4ece-b085-05487bcec252/files/85e388c5-53e7-4707-971c-fa3e582b8665.jpg"
-          alt="VESTEX philosophy"
+          src="https://cdn.poehali.dev/projects/402b0c87-66ca-4ece-b085-05487bcec252/files/5b38fb81-2003-4270-97f3-39d6b5d74762.jpg"
+          alt="VESTEX — gothic foggy mountains"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-vestex-950/20" />
+        <div className="absolute inset-0 bg-vestex-950/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-vestex-900/60" />
       </div>
 
       <div className="flex flex-col justify-center px-6 lg:px-16 py-20 lg:py-24">

@@ -26,11 +26,12 @@ export default function Hero() {
     >
       <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
         <img
-          src="https://cdn.poehali.dev/projects/402b0c87-66ca-4ece-b085-05487bcec252/files/be14c66b-29ea-4736-be43-819cb59274eb.jpg"
-          alt="VESTEX — luxury fashion editorial"
-          className="w-full h-full object-cover opacity-60"
+          src="https://cdn.poehali.dev/projects/402b0c87-66ca-4ece-b085-05487bcec252/files/bc0d4445-4bae-4838-b503-c3efba2bc9a0.jpg"
+          alt="VESTEX — gothic fashion editorial"
+          className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-vestex-950/70 via-vestex-950/30 to-vestex-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-vestex-950/80 via-vestex-950/40 to-vestex-950" />
+        <div className="absolute inset-0 bg-vestex-950/20" />
       </motion.div>
 
       <Fog className="z-[1]" />
