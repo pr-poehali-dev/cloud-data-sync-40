@@ -19,9 +19,19 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Montserrat', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+				sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+				display: ['Syncopate', 'Inter', 'sans-serif'],
 			},
 			colors: {
+				vestex: {
+					950: '#050505',
+					900: '#0a0a0a',
+					850: '#111111',
+					800: '#181818',
+					700: '#222222',
+					silver: '#c8c8c8',
+					graphite: '#6b6b6b',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

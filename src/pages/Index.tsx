@@ -1,17 +1,19 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Featured from "@/components/Featured";
-import Promo from "@/components/Promo";
-import Footer from "@/components/Footer";
+import Manifesto from "@/components/Manifesto";
+import Collection from "@/components/Collection";
+import Philosophy from "@/components/Philosophy";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-vestex-950 antialiased">
       <Header />
       <Hero />
-      <Featured />
-      <Promo />
-      <Footer />
+      <Manifesto />
+      <Collection />
+      <Philosophy />
+      <Contact />
     </main>
   );
 };
